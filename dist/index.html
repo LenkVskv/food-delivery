@@ -11,38 +11,116 @@
 </head>
 <body>
   <header>
-    <div id="sticky-header" style="height: 0">
+  <div class="wrapper">
     <div class="bar-left">
-      <img src="/img/logo1.jpg">
+        <h2>Kitchen</h2>
     </div>
     <div class="bar-right">
       <ul class="galerry">
-        <li class="home"><a href="#">Home</a></li>
-        <li class="menu"><a href="#">Our Menu</a></li>
+        <li class="home"><a href="#">Home </a></li>
+        <li class="menu"><a href="#">Our Menu</a>
+          <ul class="sub-menu">
+            <li class="cuisine"><a href="#">Cuisines</a></li>
+            <li class="meals"><a href="#">Meals</a></li>
+            <li class="days"><a href="#">Days</a></li>
+          </ul>
+        </li>
         <li class="contact"><a href="#">Contact</a></li>
+        <li class="login"><a href="/#log_in">Log In</a></li>
       </ul>
       </div>
-    </div>
-    <section class="slider">
-        <ul class="slides">
-          <li>
-            <img src="/img/main.jpg" alt="beef meal">
-            <div class="caption center-align">
+  </div>
+</div>
+    <div class="slider">
+        <ul class="slides" >
+          <li class="slide">
+            <img src="/img/slider1.jpg" alt="first-slider">
+            <span>
               <h2>Eat well on your schedule.</h2>
               <h4 class="hide-on-small-only">Chef-Made Meals Delivered to Your Doorstep with No Commitments</h4>
-            </div>
+            </span>
           </li>
+          <li class="slide">
+              <img src="/img/slider2.jpg" alt="second-slider">
+              <span>
+                <h2>We make it easy for you.</h2>
+                <h4 class="hide-on-small-only">Delicious calorie-controlled and macro-balanced meals</h4>
+              </span>
+            </li>
+            <li class="slide">
+                <img src="/img/slider3.jpg" alt="third-slider">
+                <span>
+                  <h2>The best mornings are mornings with more sleep.</h2>
+                  <h4 class="hide-on-small-only">Get a good night's rest when you don't have to prep and cook your meals everyday.</h4>
+                </span>
+              </li>
         </ul>
-   
-    </section>
+    </div>
+
   </header>
-  <!-- <ul class="sidenav" >
-      <li class="home"><a href="#">Home</a></li>
-      <li class="menu"><a href="#">Our Menu</a></li>
-      <li class="contact"><a href="#">Contact</a></li>      
-  </ul> -->
   <main>
-   
+   <div class="row">
+       <p>
+         <strong>Kitchen</strong>
+         is not your ordinary food delivery.
+        </p>
+        <p>
+          Our chef-prepared, ready-to-eat meals feature fresh, clean, and organic ingredients – delivered to your home in biodegradable packaging.
+        </p>
+        <p>
+            Healthy eating has never been this easy and enjoyable.
+        </p>
+        <p>
+            Our chefs carefully handpick the ingredients they use. As much as possible, we choose organic, locally-sourced ingredients that are good for you. We don’t cut corners – everything that goes into your meal, from the marinade to the dressing, is made entirely from scratch in our kitchen. We keep things new and interesting by changing our menu daily and featuring whatever’s in season.
+        </p>
+        <p>Take a look at our menu today.</p>
+   </div>
+   <div class="row">
+    <h2>How does it work?</h2>
+    <p>Chef-prepared meals · Clean ingredients · No subscriptions or commitments</p>
+    <div class="galerry">
+      <div class="text-center">
+        <img src="/img/order.png" alt="fresh and healthy meals">
+        <p class="center">1. Order dinner.</p>
+        <p>Plan your deliveries up to a week in advance. Prices include tax and gratuity.</p>
+      </div>
+      <div class="text-center">
+        <img src="/img/receive.jpg" alt="fully cooked meal delivery">
+        <p class="center">2. Receive your delivery.</p>
+        <p>Our meals arrive at your door, fully cooked and ready to be heated.</p>
+      </div>
+      <div class="text-center">
+        <img src="/img/heat.jpg" alt="fresh and healthy meals">
+        <p class="center">3. Heat your meal.</p>
+        <p>Heat up dinner in 15 minutes with our oven-safe, biodegradable packaging.</p>
+      </div>
+      <div class="text-center">
+        <img src ="/img/plate.jpg" alt="chef-made meals">
+        <p class="center">4. Plate and serve.</p>
+        <p>Enjoy a chef-prepared meal in the comfort of your home without cooking or cleaning.</p>
+      </div>
+    </div>
+   </div>
+   <div class="row">
+     <div class="text-center">
+       <h3>Your food should make you feel good.</h3>
+       <p>We believe that fresh, clean ingredients make delicious meals. We use responsibly sourced and organic products whenever possible and we don’t cut corners—no canned products, pre-made sauces, or mixes for us. Our chefs make everything from scratch to ensure that the majority of our meals are between 600-800 calories.</p>
+     </div>
+   </div>
+   <div class="row">
+     <div class="sign">
+       <h2>Let's Get Started</h2>
+       <p>Sign up to get our menu in your inbox.</p>
+       <form>
+          <input name="name" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" placeholder="Your name">
+        <input type="text" name="email" id="email" required="required" placeholder="Your email">
+        <input type="submit" name="commit" value="Get the menu" id="submit">
+       </form>
+     </div>
+   </div>
   </main>
+  <footer class="section teal darken-2 white-text center">
+      <p class="flow-text">Made by Olena Vaskiv &copy; 2019</p>
+  </footer>
 </body>
 </html>

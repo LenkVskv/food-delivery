@@ -1,4 +1,78 @@
-body{
-
-  background: white;
+*{
+  margin: 0;
 }
+boby{
+  height: 100%;
+  min-height: 100%;
+  color: #333;
+  background: #FFF;
+  font-family: 'Palatino Linotype', 'Bookman Antigua', Georgia, serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrapper{
+  background: #00AD90 ;
+  position:fixed; 
+  top:0;
+  width:100%;
+  display: flex;
+  padding: 10px;
+  line-height: 45px
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+a:hover{
+  opacity: 0.7;
+}
+.bar-left {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+.sub-menu{
+  display: none;
+}
+ 
+.bar-right ul li{
+  display: inline;
+  margin: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+.bar-right li::after {
+  content: "|";
+  margin: 5px;
+  float: inline-end;
+  color: #fff;
+  }
+.bar-right li:last-child::after  {
+  display: none;
+  }
+  .slider li{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.slider  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+}
+/* .slider .slides {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.slider .slide{
+  float: left;
+  list-style-type: none;
+  text-align: center;
+} */
