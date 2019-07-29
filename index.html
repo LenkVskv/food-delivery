@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/dist/css/main.css">
   <title>Fresh and Healthy Meals Delivered to Your Doorstep | Kitchen</title>
-  <script src="js/main.js"></script>
-  <script src="https://kit.fontawesome.com/f32d490031.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="/dist/js/main.js"></script>
 </head>
 <body>
-  <header>
+  <div id="header">
   <div class="wrapper">
     <div class="bar-left">
         <h2>Kitchen</h2>
@@ -18,7 +18,7 @@
     <div class="bar-right">
       <ul class="galerry">
         <li class="home"><a href="#">Home </a></li>
-        <li class="menu"><a href="#">Our Menu</a>
+        <li class="menu"><a href="/menu.html">Our Menu</a>
           <ul class="sub-menu">
             <li class="cuisine"><a href="#">Cuisines</a></li>
             <li class="meals"><a href="#">Meals</a></li>
@@ -31,33 +31,29 @@
       </div>
   </div>
 </div>
-    <div class="slider">
-        <ul class="slides" >
-          <li class="slide">
-            <img src="/img/slider1.jpg" alt="first-slider">
-            <span>
-              <h2>Eat well on your schedule.</h2>
-              <h4 class="hide-on-small-only">Chef-Made Meals Delivered to Your Doorstep with No Commitments</h4>
-            </span>
-          </li>
-          <li class="slide">
-              <img src="/img/slider2.jpg" alt="second-slider">
-              <span>
-                <h2>We make it easy for you.</h2>
-                <h4 class="hide-on-small-only">Delicious calorie-controlled and macro-balanced meals</h4>
-              </span>
-            </li>
-            <li class="slide">
-                <img src="/img/slider3.jpg" alt="third-slider">
-                <span>
-                  <h2>The best mornings are mornings with more sleep.</h2>
-                  <h4 class="hide-on-small-only">Get a good night's rest when you don't have to prep and cook your meals everyday.</h4>
-                </span>
-              </li>
-        </ul>
-    </div>
-
-  </header>
+    <div id="slider">
+      <ul>
+        <li class="slide">
+          <img src="/img/slider1.jpg" alt="first-slider">
+          <span>
+            <h2>Eat well on your schedule.</h2>
+          </span>
+        </li>
+        <li class="slide">
+          <img src="/img/slider2.jpg" alt="second-slider">
+          <span>
+            <h2>We make it easy for you.</h2>
+          </span>
+        </li>
+        <li class="slide">
+          <img src="/img/slider3.jpg" alt="third-slider">
+          <span>
+            <h2>The best mornings are mornings with more sleep.</h2>
+          </span> 
+        </li>
+      </ul>  
+    </div>    
+  </div>
   <main>
    <div class="row">
        <p>
@@ -78,25 +74,25 @@
    <div class="row">
     <h2>How does it work?</h2>
     <p>Chef-prepared meals · Clean ingredients · No subscriptions or commitments</p>
-    <div class="galerry">
-      <div class="text-center">
+    <div class="order">
+      <div class="center">
         <img src="/img/order.png" alt="fresh and healthy meals">
-        <p class="center">1. Order dinner.</p>
+        <p class="strong">1. Order dinner.</p>
         <p>Plan your deliveries up to a week in advance. Prices include tax and gratuity.</p>
       </div>
-      <div class="text-center">
+      <div class="center">
         <img src="/img/receive.jpg" alt="fully cooked meal delivery">
-        <p class="center">2. Receive your delivery.</p>
+        <p class="strong">2. Receive your delivery.</p>
         <p>Our meals arrive at your door, fully cooked and ready to be heated.</p>
       </div>
-      <div class="text-center">
+      <div class="center">
         <img src="/img/heat.jpg" alt="fresh and healthy meals">
-        <p class="center">3. Heat your meal.</p>
+        <p class="strong">3. Heat your meal.</p>
         <p>Heat up dinner in 15 minutes with our oven-safe, biodegradable packaging.</p>
       </div>
-      <div class="text-center">
+      <div class="center">
         <img src ="/img/plate.jpg" alt="chef-made meals">
-        <p class="center">4. Plate and serve.</p>
+        <p class="strong">4. Plate and serve.</p>
         <p>Enjoy a chef-prepared meal in the comfort of your home without cooking or cleaning.</p>
       </div>
     </div>
@@ -119,8 +115,8 @@
      </div>
    </div>
   </main>
-  <footer class="section teal darken-2 white-text center">
+  <div id="footer" class="section teal darken-2 white-text center">
       <p class="flow-text">Made by Olena Vaskiv &copy; 2019</p>
-  </footer>
+  </div>
 </body>
 </html>
