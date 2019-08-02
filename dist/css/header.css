@@ -1,0 +1,141 @@
+.wrapper{
+  background: #00AD90 ;
+  position:fixed; 
+  display: flex;
+  justify-content: space-between;
+  top:0;
+  z-index: 2;
+  width:100%;
+  display: flex;
+  padding: 10px;
+  left: 0px;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+a:hover{
+  opacity: 0.7;
+}
+.bar-left {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+.galerry{
+  display: flex;
+}
+.sub-menu{
+  display: none;
+  position: absolute;
+}
+.menu:hover > ul {
+  display: flex;
+  flex-direction: column;
+}
+.bar-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+ 
+.bar-right ul li{
+  margin: 5px;
+  display: inline;
+  font-size: 20px;
+  padding: 10px;
+}
+.galerry li::after {
+  content: "|";
+  margin: 5px;
+  float: inline-end;
+  color: #fff;
+  }
+.galerry li:last-child::after  {
+  display: none;
+  }
+  .slider  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 700px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  
+  h1 {
+    color: black;
+    text-align: center;
+    font-weight: 300;
+  }
+  
+#slider {
+  padding-top: 55px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  height: 400px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 400px;
+  text-align: center;
+  height: 420px;
+}
+.slide1{
+  background-image: url(/img/meals.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.slide2{
+  background-image: url(/img/meals_white_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.slide3{
+  background-image: url(/img/meals3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+span{
+  font-size: 20px;
+  color: #4A4A4A;
+}
+
+.slide2-text{
+    text-align: end;
+    margin-bottom: 20px;
+    padding: 165px;
+    max-width: 65%;
+    color: #4A4A4A;
+  
+  }
+  .slide2-text h3{
+   padding-bottom: 10px;
+   font-size: 22px;
+  }
+  .slide2-text p{
+    font-size: 20px;
+  }
+

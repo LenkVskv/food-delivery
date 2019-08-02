@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/dist/css/menu.css">
+    <link rel="stylesheet" href="/html/index.html">
+    <link rel="stylesheet" href="/dist/css/main.css">
     <script src="/dist/js/menu.js"></script>
     <script src="/dist/js/main.js"></script>
 </head>
@@ -15,18 +17,21 @@
         <div class="top-cart-info">
             <div class="container top-cart-info-container">
                 <span class="top-cart-info__item">
-                     Товаров в корзине - <span class="red-info">XXX</span>,
-                      на сумму <span class="red-info">XXX</span> грн</span>
-                <button class="btn-check ">Оформить заказ</button>
+                     Items in box - <span class="red-info">XXX</span>,
+                      Total price <span class="red-info">XXX</span> uah</span>
+                <button class="btn-check ">Сheckout</button>
                 <div class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <div class="container">
-                                <form>
-                                        <input type="email" name="email" value="" required  /><h5>E-mail* </h5>
-                                         <input type="name" name="name" minlength="4" maxlength="20" pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}" value="" required /><h5>Ваше имя*</h5>
-                                        <input type="submit" name="form_submit" value="Submit" />
-                                      </form>
+                            <form>
+                                <p>Сheckout</p>
+                                <h5>Your're E-mail* </h5>
+                                 <input type="email" name="email" value="" required  />
+                                 <h5>You're name*</h5>
+                                  <input type="name" name="name" minlength="4" maxlength="20" pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}" value="" required />
+                                 <input type="submit" name="form_submit" value="Submit" />
+                           </form>
                                 
                     </div>
                 </div>
@@ -36,214 +41,208 @@
 
     </div>
 
-
-
     <div class="wrap">
         <section class="container">
             <div class="filter-box">
                 <div class="select-box">
-                    <label class="filter-label">Категория</label>
+                    <label class="filter-label">Category</label>
                     <select class="select-control">
-                        <option value="0">Все</option>
-                        <option value="1">Завтраки</option>
-                        <option value="2">Первые блюда</option>
-                        <option value="3">Гарниры</option>
+                        <option value="0">All</option>
+                        <option value="1">Breakfast</option>
+                        <option value="2">First meal</option>
+                        <option value="3">Side dishes</option>
                     </select>
-                </div><!-- /.select-box -->
+                </div>
                 <div class="price-select-box">
-                    <label class="filter-label">Цена</label>
+                    <label class="filter-label">Price</label>
                     <select class="select-control">
-                        <option value="0">Все</option>
-                        <option value="30">До 30 грн</option>
-                        <option value="50">До 50 грн</option>
-                        <option value="100">До 100 грн</option>
-                        <option value="150">До 150 грн</option>
+                        <option value="0">All</option>
+                        <option value="30">up to 30 uah</option>
+                        <option value="50">up to 50 uah</option>
+                        <option value="100">up to 100 uah</option>
+                        <option value="150">up to 150 uah</option>
                     </select>
-                </div><!-- /.price-select-box -->
-            </div><!-- /filter-box-->
+                </div>
+            </div>
 
 
 
             <div class="products-box grid-box">
 
                 <div class="product-box__item breakfast">
-                    <h3 class="product-box__title">Овсяная каша с фруктами</h3>
+                    <h3 class="product-box__title">Oatmeal with fruit</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im1.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>25 грн.</p>
+                        <p>25 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number" name="qty"> Кол
+                            <input class="qty__item" type="number" name="qty"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
                     </div>
                 </div>
                 <div class="product-box__item garnish">
-                    <h3 class="product-box__title">Яичница глазунья с овощами на сковородке</h3>
+                    <h3 class="product-box__title">Fried eggs with vegetables in a pan</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im2.jpg">
                     </div>
                     <div class="product-box__meta">
                         <p>25 грн.</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item breakfast">
-                    <h3 class="product-box__title">Сет азербайджанский завтрак</h3>
+                    <h3 class="product-box__title">Seth Azerbaijani breakfast</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im3.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>30 грн.</p>
+                        <p>30 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item breakfast">
-                    <h3 class="product-box__title">Яичница с помидорами по-бакински</h3>
+                    <h3 class="product-box__title">Baked eggs and tomato</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im4.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>45 грн.</p>
+                        <p>45 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item breakfast">
-                    <h3 class="product-box__title">Сырники со сметаной</h3>
+                    <h3 class="product-box__title">Cheesecakes with sour cream</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im5.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>45 грн.</p>
+                        <p>45 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item first_course">
-                    <h3 class="product-box__title">Шпинатный крем-суп</h3>
+                    <h3 class="product-box__title">Spinach Cream Soup</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im6.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>50 грн.</p>
+                        <p>50 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item first_course">
-                    <h3 class="product-box__title">Суп Пити</h3>
+                    <h3 class="product-box__title">Petey soup</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im7.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>85 грн.</p>
+                        <p>85 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item first_course">
-                    <h3 class="product-box__title">Борщ украинский</h3>
+                    <h3 class="product-box__title">Ukrainian borsch</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im8.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>95 грн.</p>
+                        <p>95 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item first_course">
-                    <h3 class="product-box__title">Суп Кюфта Бозбаш</h3>
+                    <h3 class="product-box__title">Kufta Bozbash Soup</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im9.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>100 грн.</p>
+                        <p>100 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item garnish">
-                    <h3 class="product-box__title">Картофель фри</h3>
+                    <h3 class="product-box__title">French fries</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im10.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>125 грн.</p>
+                        <p>125 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item garnish">
-                    <h3 class="product-box__title">Картофель по-домашнему</h3>
+                    <h3 class="product-box__title">Homemade potato</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im11.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>135 грн.</p>
+                        <p>135 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
                 <div class="product-box__item garnish">
-                    <h3 class="product-box__title">Рис с овощами</h3>
+                    <h3 class="product-box__title">Rice with vegetables</h3>
                     <div class="product-box__img">
                         <img class="img-fluid" src="/img/menu/im12.jpg">
                     </div>
                     <div class="product-box__meta">
-                        <p>150 грн.</p>
+                        <p>150 uah</p>
                         <div class="qty">
-                            <input class="qty__item" type="number"> Кол
+                            <input class="qty__item" type="number"> Amount
                         </div>
-                        <button class="product-box__btn">Добавить</button>
+                        <button class="product-box__btn">Add</button>
 
                     </div>
                 </div>
 
 
-            </div><!-- /product-box-->
+            </div>
 
         </section>
     </div>
-
-    <footer class="section teal darken-2 white-text center">
-      <p class="flow-text">Made by Olena Vaskiv &copy; 2019</p>
-  </footer>
-</div><!-- /.app-container -->
+</div>
 
 
 

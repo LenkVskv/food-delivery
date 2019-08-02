@@ -144,7 +144,7 @@ function submit(){
     }, false);
 
     let sub = document.querySelector('input[name="form_submit"]');
-    if('input[name="name"]' &&'input[name="email"]' == true){
+    if('input[name="name"]' &&'input[name="email"]' === true){
       sub.addEventListener('click',function(){
         alert("Спасибо за ваш заказ.");
       })

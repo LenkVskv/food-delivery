@@ -21,7 +21,8 @@ h1, h2, h3 {
     height: auto;
 }
 .red-info {
-    color: darkred;
+    color: darkslategray;
+    font-size: 20px;
 }
 .py-1 {
     padding: 1rem 0;
@@ -42,6 +43,14 @@ h1, h2, h3 {
 .container {
     max-width: 1200px;
     margin: auto;
+
+
+}
+.container p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #00AD90;
+    margin-bottom: 15px;
 }
 .top-header {
     margin-bottom: 2rem;
@@ -86,12 +95,15 @@ h1, h2, h3 {
 }
 .product-box__meta {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+ 
     align-items: center;
 }
+
 .qty__item {
-    width: 50px;
+    width: 70px;
     padding: 3px;
+    border: 1px solid darkolivegreen
 }
 .product-box__btn {
     padding: 3px;
@@ -120,6 +132,7 @@ h1, h2, h3 {
 .top-cart-info-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .show-cart {
     cursor: pointer;
@@ -156,6 +169,10 @@ h1, h2, h3 {
     padding: .2rem 0;
     border-bottom: 1px dotted black;
 }
+.top-cart-info-container{
+    font-weight: 400;
+
+}
 
 .btn-check-box {
     padding: 1rem 0;
@@ -191,10 +208,10 @@ h1, h2, h3 {
   
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 10% auto; 
     padding: 20px;
-
-    width: 80%; 
+    height: 60%;
+    width: 70%; 
   }
   
   
@@ -207,7 +224,7 @@ h1, h2, h3 {
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: red;
     text-decoration: none;
     cursor: pointer;
   }
@@ -226,15 +243,16 @@ h1, h2, h3 {
     margin: 50px auto;
     background: #fff;
     padding: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     text-align: center;
+ 
   }
   
   input[type="email"] {
     font-size: 1rem;
     width: 100%;
     padding: 5px;
-    margin: 10px 0;
+    margin-bottom: 10px;
     
   }
   input[type="name"] {
@@ -251,7 +269,6 @@ h1, h2, h3 {
     color: #fff;
     box-shadow: 0 1px 0 #006799;
     font-size: 1rem;
-    margin: 15px 0;
     cursor: pointer;
   }
 .filter-box {

@@ -4,124 +4,15 @@
 html {
   border-top: 5px solid #fff;
   color: #2a2a2a;
+  max-width: none;
 }
 body{
   height: 100%;
   min-height: 100%;
   color: #333;
-  background: #FFF;
+  background: #f9f9f9;
   font-family: 'Palatino Linotype', 'Bookman Antigua', Georgia, serif;
   -webkit-text-size-adjust: 100%;
-}
-.wrapper{
-  background: #00AD90 ;
-  position:fixed; 
-  display: flex;
-  justify-content: space-between;
-  top:0;
-  z-index: 2;
-  width:100%;
-  display: flex;
-  padding: 10px;
-  line-height: 45px
-}
-a{
-   text-decoration: none;
-   color: white;
-}
-a:hover{
-  opacity: 0.7;
-}
-.bar-left {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  color: white;
-}
-.galerry{
-  display: flex;
-}
-.sub-menu{
-  display: none;
-  position: absolute;
-}
-.menu:hover > ul {
-  display: flex;
-  flex-direction: column
-}
-.bar-right{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
- 
-.bar-right ul li{
-  margin: 5px;
-  display: inline;
-  font-size: 20px;
-  padding: 10px;
-}
-.bar-right li::after {
-  content: "|";
-  margin: 5px;
-  float: inline-end;
-  color: #fff;
-  }
-.bar-right li:last-child::after  {
-  display: none;
-  }
-
-  span{
-    color: #00AD90 ;
-  }
-  .center{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-.slider  {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100vw;
-  height: 700px;
-  overflow: hidden;
-}
-
-
-h1 {
-  color: black;
-  text-align: center;
-  font-weight: 300;
-}
-
-#slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px auto 0 auto;
-  border-radius: 4px;
-}
-
-#slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style: none;
-}
-
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 400px;
-  text-align: center;
-  line-height: 400px;
 }
 .order{
   margin-right: auto;
@@ -132,16 +23,59 @@ h1 {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   text-align: center;
-  margin-bottom: 0.25em;
+  margin-bottom:30px;
  
 }
+  span{
+    color: #00AD90 ;
+  }
+  .center{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0 0 25%;
+
+  }
+  .description{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 19px;
+    padding: 10px;
+  }
+  .about-kitchen{
+    flex: 0 0 66%;
+    max-width: 60%;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    background: white;
+  }
+  .info{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .info h2{
+    margin-bottom: 10px;
+    font-size: 2.1rem;
+  }
+  .info p{
+    font-size: 19px;
+    line-height: 1.4;
+  
+  }
+  .center-padding{
+    padding: 6px;
+  }
+
 .center>p {
   margin-bottom: 1rem;
   font-size: inherit;
   line-height: 1.7;
   text-align: center;
   font-size: inherit;
-  line-height: 1.4;
+
 }
 .strong{
   font-weight: bold;
@@ -150,5 +84,60 @@ h1 {
   text-rendering: auto;
   text-align: center;
   
+}
+.row-center{
+  margin-top: 3em;
+  background-color: #fff;
+  flex: 0 0 100%;
+  max-width: 100%;
+  border-radius: 3px;
+
+}
+.background{
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 420px;
+}
+.text-center{
+  text-align: end;
+  margin-bottom: 3em;
+  padding: 30px;
+  background-color: #fff;
+  max-width: 65%;
+  border-radius: 3px;
+  opacity: 0.9;
+
+}
+.text-center h3{
+ padding-bottom: 10px;
+}
+.row-sign{
+  padding-top: 20px;
+  height: 300px;
+  background: rgb(223, 235, 238);
+  text-align: center;
+}
+input{
+  margin: 10px;
+  padding:8px ;
+  width: 250px;
+}
+input[type="submit"]{
+  display: block;
+  margin : 0 auto;
+  background: #00AD90;
+  border-radius: 10px;
+  color: #f9f9f9;
+  font-size: 16px;
+  
+}
+.sign h2{
+  font-size: 28px;
+  padding-top: 60px;
+}
+.sub-menu li{
+  text-decoration: none;
 }
 
