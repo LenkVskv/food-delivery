@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/dist/css/signup.css">
+  <link rel="stylesheet" href="/dist/css/header.css">
+  <link rel="stylesheet" href="/dist/css/footer.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="/dist/js/main.js"></script>
+  <title>Sign up </title>
+</head>
+<body>
+  <div id="header"></div>
+  <div class="sign-wrapper">
+    <div class="regist-form">
+      <h3>Welcome to Kitchen!</h3>
+      <h5>We're so excited to have you.</h5>
+      <form name="new-user-form" id="new-user-form">
+        <div class=" name-wrap">
+        <label class="name">Full name</label>
+        <input type="text" name="name" id="name" autofocus="autofocus" placeholder="Full name">
+      </div>
+      <div class="email-wrap">
+        <label class="email">Email address</label>
+        <input type="email" name="email" id="email" placeholder="Email address" required="required">
+      </div>
+      <div class="pass-wrap">
+        <label class="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password " required="required">
+        <p class="pass-info">
+            Your password must be at least 8 characters.
+        </p>
+      </div>
+      <div class="account-wrap">
+        <input type="submit" name="commit" value="Create account" class="account">
+      </div>
+      </form>
+      <div class="text">
+        <span>Already have an account? </span>
+        <a class="link" href="/html/login.html">Sign in</a>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

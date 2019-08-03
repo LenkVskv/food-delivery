@@ -2,13 +2,35 @@
 
 <head>
   <link rel="stylesheet" href="/dist/css/contact.css">
-  <link rel="stylesheet" href="/dist/js/contact.js">
+  <link rel="stylesheet" href="/dist/css/header.css">
+  <link rel="stylesheet" href="/dist/css/footer.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="/dist/js/main.js"></script>
 	<title>Where we are</title>
-	<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	
 </head>
+<script>
+		var map;
+		let coordinates = {lat: 50.4289871, lng: 30.5244014}
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: coordinates,
+          zoom: 15
+		  });
+		  var marker = new google.maps.Marker({
+			position: coordinates,
+			title:"Kitchen"
+		});
+		marker.setMap(map);
 
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQAbJDwU2Wm7zcst6tJ4RyqTPsXgQ4i-c&callback=initMap"
+    async defer></script>
 <body>
-  	<div id="map"></div>
+	<div id="header"></div>
+	  <div id="map"></div>
+	  <div id="footer"></div>
 </body>
 
 </html>

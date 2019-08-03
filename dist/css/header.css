@@ -46,7 +46,7 @@ a:hover{
   font-size: 20px;
   padding: 10px;
 }
-.galerry li::after {
+.galerry > li::after {
   content: "|";
   margin: 5px;
   float: inline-end;
@@ -137,5 +137,8 @@ span{
   }
   .slide2-text p{
     font-size: 20px;
+  }
+  .sub-menu{
+    background: #00AD90;
   }
 

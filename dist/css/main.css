@@ -43,6 +43,7 @@ body{
     margin-bottom: 20px;
     font-size: 19px;
     padding: 10px;
+    margin-top: 25px;
   }
   .about-kitchen{
     flex: 0 0 66%;
@@ -124,15 +125,7 @@ input{
   padding:8px ;
   width: 250px;
 }
-input[type="submit"]{
-  display: block;
-  margin : 0 auto;
-  background: #00AD90;
-  border-radius: 10px;
-  color: #f9f9f9;
-  font-size: 16px;
-  
-}
+
 .sign h2{
   font-size: 28px;
   padding-top: 60px;
@@ -141,3 +134,11 @@ input[type="submit"]{
   text-decoration: none;
 }
 
+.get-menu{
+ display: block;
+ margin: 0 auto;
+ background: #00AD90;
+ border-radius: 10px;
+ color: #f9f9f9;
+ font-size: 22px;
+}

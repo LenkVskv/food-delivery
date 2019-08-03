@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: white;
   
 }
 html {
@@ -12,6 +11,9 @@ body {
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
 }
+#slider{
+    display: none;
+  }
 h1, h2, h3 {
     font-weight: 500;
 }
@@ -171,6 +173,7 @@ h1, h2, h3 {
 }
 .top-cart-info-container{
     font-weight: 400;
+    margin-top: 45px;
 
 }
 
