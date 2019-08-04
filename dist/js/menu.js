@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', function(){
   onDocumentReady();
+  
 });
+var orders = [];
+
 function onDocumentReady(){
   addButtonListeners();
   categories();
   filter();
+  filterCuisine();
  order();
  submit();
+
 //  showValue();
-var aSlider = new Slider( ".products-box" );
+
 	
 }
 function addButtonListeners(){
@@ -20,6 +25,13 @@ function addButtonListeners(){
     elem.querySelector(".product-box__btn").addEventListener("click",()=>{
       let price = parseInt(elem.querySelector("p").textContent);
       let qty = elem.querySelector(".qty__item").value;
+      let name = elem.querySelector(".product-box__title").textContent;
+      orders.push({
+        price: price,
+        qty : qty,
+        name : name
+      })
+      localStorage.setItem("orders",JSON.stringify(orders));
       generalQty.textContent = +qty + +generalQty.textContent;
       sum.textContent = price*qty + +sum.textContent;
     });
@@ -28,7 +40,12 @@ function addButtonListeners(){
 function categories(){
   let categorySelect = document.querySelectorAll(".select-control")[0];
   let priceSelect = document.querySelectorAll(".select-control")[1];
+  let cuisineSelect = document.querySelectorAll(".select-control")[2];
   
+  cuisineSelect.addEventListener("change",() =>{
+    filterCuisine(cuisineSelect.value,priceSelect.value);
+  })
+
   categorySelect.addEventListener("change",() =>{
     filter(categorySelect.value,priceSelect.value);
   })
@@ -87,6 +104,58 @@ function filter(categoryValue, priceValue){
     }
   })
 }
+
+function filterCuisine(categoryValue, priceValue){
+  let elems = document.querySelectorAll(".product-box__item");
+  elems.forEach(elem =>{
+    elem.style.display = 'flex';
+  });
+  switch(categoryValue){
+    case '0':
+      elems.forEach(elem =>{
+          elem.style.display = 'flex';
+      })
+    break;
+    case '1':
+      elems.forEach(elem =>{
+        if(!elem.classList.contains('ukrainian')){
+          elem.style.display = 'none';
+        }else{
+          elem.style.display = 'flex';
+        }
+      })
+    break;
+    case '2':
+      elems.forEach(elem =>{
+        if(!elem.classList.contains('turkish')){
+          elem.style.display = 'none';
+        }else{
+          elem.style.display = 'flex';
+        }
+      })
+    break;
+    case '3':
+    elems.forEach(elem =>{
+      if(!elem.classList.contains('belarus')){
+        elem.style.display = 'none';
+      }else{
+        elem.style.display = 'flex';
+      }
+    })
+    break;
+  }
+  elems.forEach(elem =>{
+    priceValue = +priceValue;
+    if(priceValue > 0){
+      let price = parseInt(elem.querySelector('p').textContent);
+      if(price > priceValue){
+        elem.style.display = 'none';
+      }
+    }
+  })
+}
+
+
 function order(){
 let modal = document.querySelector(".modal");
 
@@ -94,8 +163,16 @@ let btn = document.querySelector(".btn-check");
 
 let span = document.getElementsByClassName("close")[0];
 
+let textOrder = document.querySelector(".text-order");
+
 btn.onclick = function() {
+  let result = "";
   modal.style.display = "block";
+  let items = JSON.parse(localStorage.getItem("orders"));
+  items.forEach(elem => {
+    result += `<div>${elem.name}: ${elem.qty} : ${elem.price}</div>`
+  })
+  textOrder.innerHTML = result;
 }
 
 span.onclick = function() {
@@ -155,52 +232,6 @@ function submit(){
     
 }
 // ------------------------
-function Slider( element ) {
-	this.el = document.querySelector( element );
-	this.init();
-}	
-
-Slider.prototype = {
-	init: function() {
-		this.links = this.el.querySelectorAll( "#slider-nav a" );
-		this.wrapper = this.el.querySelectorAll( ".product-box__item" );
-		this.navigate();
-	},
-	navigate: function() {
-	
-		for( var i = 0; i < this.links.length; ++i ) {
-			var link = this.links[i];
-			this.slide( link );	
-		}
-	},
-	
-	slide: function( element ) {
-		var self = this;
-		element.addEventListener( "click", function( e ) {
-			e.preventDefault();
-			var a = this;
-			self.setCurrentLink( a );
-			var index = parseInt( a.getAttribute( "data-slide" ), 8 ) + 1;
-			var currentSlide = self.el.querySelector( ".slide:nth-child(" + index + ")" );
-			
-			self.wrapper.style.left = "-" + currentSlide.offsetLeft + "px";
-			
-		}, false);
-	},
-	setCurrentLink: function( link ) {
-		var parent = link.parentNode;
-		var a = parent.querySelectorAll( "a" );
-		
-		link.className = "current";
-		
-		for( var j = 0; j < a.length; ++j ) {
-			var cur = a[j];
-			if( cur !== link ) {
-				cur.className = "";
-			}
-		}
-	}	
-};
 
 // function showValue(id, value) {
 //   document.getElementById(id).innerHTML = value;

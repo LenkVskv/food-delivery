@@ -38,6 +38,7 @@ h3{
   text-align: center;
 }
 h5{
+  padding-bottom: 30px;
   text-align: center;
 }
 .pass-info{
@@ -53,6 +54,7 @@ h5{
   background-color: #00AD90;
   color: #fff;
   font-size: inherit;
+  margin-top: 10px;
 }
 input {
   margin-bottom: 8px;

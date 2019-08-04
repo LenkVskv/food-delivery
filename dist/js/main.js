@@ -5,8 +5,14 @@ $(function(){
 }); 
 
 jQuery(document).ready(function ($) {
-
+    
+    // let getmenu = $(".get-menu");
+    // getmenu.submit((event)=>{
+    //     event.preventDefault();
+    //     window.location.href = "menu.html";
+    // })
   
+
     setInterval(function () {
         moveRight();
     }, 5000);

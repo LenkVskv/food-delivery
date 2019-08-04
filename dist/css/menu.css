@@ -295,19 +295,3 @@ h1, h3 {
     justify-content: space-around;
 }
 /* ------------------------------- */
-
-#slider-nav a {
-	width: 2em;
-	height: 2em;
-	border: 1px solid #ccc;
-	text-align: center;
-	text-decoration: none;
-	color: #000;
-	display: inline-block;
-	line-height: 2;
-	margin-right: 0.5em;
-}
-
-#slider-nav a.current {
-	border-color: #000;
-}
