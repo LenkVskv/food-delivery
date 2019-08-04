@@ -4,7 +4,9 @@
     <title>Menu | Kitchen</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="//code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css "></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <link rel="stylesheet" href="/dist/css/menu.css">
     <link rel="stylesheet" href="/dist/css/main.css">
     <link rel="stylesheet" href="/dist/css/header.css">
@@ -48,7 +50,7 @@
         <section class="container">
             <div class="filter-box">
                 <div class="select-box">
-                    <label class="filter-label">Category</label>
+                    <label class="filter-label">Meals</label>
                     <select class="select-control">
                         <option value="0">All</option>
                         <option value="1">Breakfast</option>
@@ -57,7 +59,7 @@
                     </select>
                 </div>
                 <div class="price-select-box">
-                    <label class="filter-label">Price</label>
+                    <label class="filter-label">Price filter</label>
                     <select class="select-control">
                         <option value="0">All</option>
                         <option value="30">up to 30 uah</option>
@@ -65,10 +67,28 @@
                         <option value="100">up to 100 uah</option>
                         <option value="150">up to 150 uah</option>
                     </select>
+                    </div>
+                <div class="cuisine-select-box">
+                    <label class="filter-label">Cuisine</label>
+                    <select class="select-control">
+                        <option value="0">All</option>
+                        <option value="1">Ukrainian</option>
+                        <option value="2">Turkish</option>
+                        <option value="3">Belarus</option>
+                    </select>
                 </div>
+               
+                <div>
+                    <!-- <label>Set date</label>
+                    <input type="datetime-local" onchange="showValue('datetime-local', event.target.value)">
+                    <span id="datetime-local"></span>
+                  </div> -->
+                  <label>Pick date</label>
+                  <input type="date" class="datepicker" />
+                 </div>
+                       
             </div>
-
-
+           
 
             <div class="products-box grid-box">
 
@@ -238,8 +258,15 @@
                         <button class="product-box__btn">Add</button>
 
                     </div>
+                    
                 </div>
-
+                <div id="slider-nav">
+                    <a href="#" data-slide="0">1</a>
+                    <a href="#" data-slide="1">2</a>
+                    <a href="#" data-slide="2">3</a>
+                    <a href="#" data-slide="3">4</a>
+                    <a href="#" data-slide="4">5</a>
+                </div>
 
             </div>
 

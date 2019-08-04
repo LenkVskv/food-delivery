@@ -9,12 +9,11 @@ html {
 }
 body {
     font-size: 1rem;
-    font-family: 'Ubuntu', sans-serif;
 }
 #slider{
     display: none;
   }
-h1, h2, h3 {
+h1, h3 {
     font-weight: 500;
 }
 .img-fluid {
@@ -126,6 +125,7 @@ h1, h2, h3 {
 }
 
 .top-cart {
+    font-family: Helvetica, Verdana, sans-serif;
     padding: .5rem 0;
     width: 100%;
     top: 0;
@@ -233,12 +233,7 @@ h1, h2, h3 {
   }
   * {
     box-sizing: border-box;
-    font-family: Helvetica, Verdana, sans-serif;
-  }
-  
-  body {
-    background: white;
-    font-family: 'Palatino Linotype', 'Bookman Antigua', Georgia, serif;
+    
   }
   
   form {
@@ -273,6 +268,7 @@ h1, h2, h3 {
     box-shadow: 0 1px 0 #006799;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: 20px;
   }
 .filter-box {
     padding: 1rem;
@@ -297,4 +293,21 @@ h1, h2, h3 {
 .section {
     display: flex;
     justify-content: space-around;
+}
+/* ------------------------------- */
+
+#slider-nav a {
+	width: 2em;
+	height: 2em;
+	border: 1px solid #ccc;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	line-height: 2;
+	margin-right: 0.5em;
+}
+
+#slider-nav a.current {
+	border-color: #000;
 }

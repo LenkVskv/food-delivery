@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+}
+.sign-wrapper{ 
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  height: 500px;
+  padding-top:100px;
+  
+}
+#slider{
+   display: none;
+ }
+ .regist-form{
+    display: block;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    height: 350px;
+    color: #4A4A4A;
+    text-rendering: auto;
+    font-size: 21px;
+ }
+
+h3{
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 0;
+  text-align: center;
+}
+h5{
+  text-align: center;
+}
+.pass-info{
+  font-size: 14px;
+}
+.account {
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #00AD90;
+  color: #fff;
+  font-size: inherit;
+}
+input {
+  margin-bottom: 8px;
+  height: 42px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding:10px;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #0a0a0a;
+
+}
+form{
+  position: relative;
+  bottom: 15px;
+}
+.link{
+  color: #00AD90;
+}
