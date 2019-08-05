@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-  hui();
+  mainorder();
  
 });
-function hui(){
+function mainorder(){
   let account = JSON.parse(localStorage.getItem("account"));
  let signup = $(".signup");
  let login = $(".login");
@@ -25,7 +25,7 @@ function hui(){
   logout.click((event)=>{
     event.preventDefault();
     localStorage.removeItem("account");
-    hui();
+    mainorder();
 
   })
 }

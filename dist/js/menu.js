@@ -9,10 +9,10 @@ function onDocumentReady(){
   categories();
   filter();
   filterCuisine();
- order();
- submit();
+  order();
+  submit();
 
-//  showValue();
+  //  showValue();
 
 	
 }
@@ -170,7 +170,7 @@ btn.onclick = function() {
   modal.style.display = "block";
   let items = JSON.parse(localStorage.getItem("orders"));
   items.forEach(elem => {
-    result += `<div>${elem.name}: ${elem.qty} : ${elem.price}</div>`
+    result += `<div>Order consist of: <br>${elem.name}: ${elem.qty} portion: ${elem.price} uah</div>`
   })
   textOrder.innerHTML = result;
 }
@@ -224,7 +224,7 @@ function submit(){
     }, false);
 
     let sub = document.querySelector('input[name="form_submit"]');
-    if('input[name="name"]' &&'input[name="email"]' != true){
+    if('input[name="name"]' &&'input[name="email"]' !== ""){
       sub.addEventListener('click',function(){
         alert("Thanks for your order. The manager will contact you.");
       })

@@ -216,7 +216,10 @@ h1, h3 {
     height: 60%;
     width: 70%; 
   }
-  
+   .text-order{
+       text-align: center;
+       font-size: 22px;
+   }
   
   .close {
     color: #aaa;
